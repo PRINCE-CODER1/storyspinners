@@ -809,6 +809,8 @@ body {
 /* footer section here */
 
 footer {
+  position: relative;
+  bottom: 0;
   background: #323233;
   padding: 4vw 12vw;
 }
@@ -962,6 +964,68 @@ footer {
   transition: all 0.5s;
 }
 
+/* event styling  */
+.about-cnt-2 {
+  position: relative;
+  background: linear-gradient(to left, #000000 50%, #eec930 50%);
+  padding: 3vw;
+  display: grid;
+  place-items: center;
+  z-index: 0;
+  border-radius: 10px;
+  border-top-right-radius: 100%;
+}
+#waiting-head {
+  font-family: pop;
+}
+.collab {
+  padding: 4vw;
+  text-align: center;
+  background: linear-gradient(61deg, #eec930 12%, #000000 83%);
+}
+.collab h2 {
+  font-family: med;
+  color: #fff;
+}
+
+/* contact section here */
+
+.contact {
+  padding: 4vw 10vw;
+}
+.contact-data {
+  padding: 3vw;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(28, 87, 182, 0.3);
+}
+.contact-us-cnt h2 {
+  text-align: center;
+  font-family: med;
+  font-weight: 600;
+}
+.contact-us-cnt p {
+  font-family: nunito;
+  font-size: 1.4vw;
+}
+.contact-img {
+  width: 100%;
+  height: 100%;
+}
+.contact-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.form-area {
+  height: 100%;
+  padding: 0 3vw;
+}
+.form-area form {
+  /* padding: 2vw; */
+}
+.form-area h2 {
+  font-family: med;
+}
 /* ************************************************ */
 /* ************************************************ */
 /* ************************************************ */
