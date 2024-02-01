@@ -48,7 +48,6 @@ body {
   align-items: center;
   /* width: 100%; */
   height: 100px;
-  border: 1px solid red;
 }
 .logo img {
   width: 100%;
@@ -265,8 +264,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   z-index: -1;
   background: #000000;
@@ -277,8 +276,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   z-index: -1;
   background: #eec930;
@@ -289,8 +288,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   z-index: -1;
   background: #000000;
@@ -301,8 +300,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   z-index: -1;
   background: #eec930;
@@ -313,8 +312,8 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 440px;
-  height: 440px;
+  width: 30vw;
+  height: 30vw;
   border-radius: 50%;
   z-index: -1;
   background: #fff;
@@ -821,6 +820,9 @@ footer {
   color: #c0c1c0;
   font-weight: 100;
 }
+.footer-txt a:hover {
+  color: #fff;
+}
 .footer-2 {
   padding: 0.25vw;
   font-size: 0.9vw;
@@ -942,4 +944,183 @@ footer {
   object-fit: cover;
   filter: drop-shadow(0 0 30px #eec930);
   transition: all 0.5s;
+}
+
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+/* ******************MEDIA QUERY******************* */
+/* ************************************************ */
+/* ************************************************ */
+/* ************************************************ */
+
+@media (max-width: 1200px) {
+  /* choose section */
+
+  .choose-cnt {
+    height: 350px;
+  }
+}
+@media (max-width: 992px) {
+  .sl-1:after {
+    width: 35vw;
+    height: 35vw;
+  }
+  .sl-2:after {
+    width: 35vw;
+    height: 35vw;
+  }
+  .sl-3:after {
+    width: 35vw;
+    height: 35vw;
+  }
+  .sl-4:after {
+    width: 35vw;
+    height: 35vw;
+  }
+  .sl-5:after {
+    width: 35vw;
+    height: 35vw;
+  }
+  .slider-txt h1 {
+    font-size: 5vw;
+  }
+  .slider-txt > p {
+    font-size: 1.8vw;
+  }
+  .slider-txt > p + p {
+    font-size: 1.8vw;
+  }
+  .slider-txt a {
+    margin-top: 4vw;
+  }
+  /* choose section */
+
+  .choose-cnt {
+    height: 300px;
+  }
+}
+
+/* For tablets laptops */
+@media (max-width: 768px) {
+  .slider-txt h1 {
+    font-size: 8vw;
+  }
+  .slider-txt > p {
+    font-size: 3.5vw;
+  }
+  .slider-txt > p + p {
+    font-size: 3.5vw;
+  }
+  .slider-txt a {
+    font-size: 2.8vw;
+    margin-bottom: 4vw;
+  }
+
+  .slider-image {
+    display: none;
+  }
+
+  /* choose cnt */
+
+  .choose-sec {
+    padding: 20vw 0;
+  }
+  .choose-cnt {
+    height: 250px;
+  }
+  .choose-sec > h1 {
+    font-size: 8vw;
+  }
+  .choose-sec > p {
+    font-size: 3vw;
+  }
+  .choose-cnt i {
+    font-size: 7vw;
+  }
+  .choose-cnt h5 {
+    font-size: 7vw;
+  }
+
+  /* package section  */
+
+  .package {
+    padding: 8vw 0;
+  }
+  .package-cnt h1 {
+    font-size: 7vw;
+  }
+  .package-cnt p {
+    font-size: 4vw;
+  }
+  .package-cnt a {
+    padding: 3vw 8vw;
+    font-size: 2.3vw;
+  }
+
+  /* published section  */
+
+  .published {
+    padding: 8vw 0;
+  }
+  .published > h1 {
+    font-size: 7vw;
+  }
+  .published > h5 {
+    font-size: 3.3vw;
+  }
+  .questions {
+    margin: 4vw 0;
+  }
+  .ques-1 {
+    padding: 5vw;
+  }
+
+  /* register section  */
+
+  .register {
+    padding: 8vw 0;
+  }
+  .reg-txt h1 {
+    font-size: 7vw;
+  }
+
+  /* dashboard section  */
+
+  .dashboard {
+    padding: 7vw 5vw;
+  }
+  .dash-head {
+    margin: 5vw 0;
+  }
+  .dash-head > h1 {
+    font-size: 7vw;
+  }
+  .dash-head > p {
+    font-size: 4vw;
+  }
+
+  /* query section  */
+
+  .query {
+    padding: 8vw 0;
+  }
+
+  /* footer section  */
+
+  footer {
+    padding: 4vw 4vw;
+  }
+  .grapdev p {
+    font-size: 4vw;
+  }
+  .footer-txt h6 {
+    font-size: 4vw;
+  }
+  .footer-2 {
+    padding: 3vw;
+  }
+  .footer-2 p {
+    font-size: 2.5vw;
+  }
 }
