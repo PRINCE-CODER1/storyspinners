@@ -999,10 +999,101 @@ footer {
   .choose-cnt {
     height: 300px;
   }
+
+  /* dashboard section  */
+  .dash-img {
+    display: none;
+  }
 }
 
 /* For tablets laptops */
 @media (max-width: 768px) {
+  /* choose cnt */
+
+  .choose-sec {
+    padding: 10vw 0;
+  }
+  .choose-cnt {
+    height: 300px;
+  }
+  .choose-sec > h1 {
+    font-size: 8vw;
+  }
+  .choose-sec > p {
+    font-size: 3vw;
+  }
+  .choose-cnt i {
+    font-size: 7vw;
+  }
+  .choose-cnt h5 {
+    font-size: 4vw;
+  }
+  /* package section  */
+
+  .package {
+    padding: 8vw 0;
+  }
+  .package-cnt h1 {
+    font-size: 7vw;
+  }
+  .package-cnt p {
+    font-size: 3vw;
+    margin: 7vw 0;
+  }
+  .package-cnt a {
+    padding: 3vw 8vw;
+    font-size: 2.3vw;
+  }
+
+  /* dashboard section  */
+  .dash-head h1 {
+    font-size: 6vw;
+  }
+  .dash-head p {
+    font-size: 2.5vw;
+  }
+  .simple-txt h2 {
+    font-size: 4vw;
+  }
+  /* published section  */
+
+  .published {
+    padding: 8vw 0;
+  }
+  .published > h1 {
+    font-size: 7vw;
+  }
+  .published > h5 {
+    font-size: 3.3vw;
+  }
+  .questions {
+    margin: 4vw 0;
+  }
+  .ques-1 {
+    padding: 5vw;
+  }
+  /* footer section  */
+
+  footer {
+    padding: 4vw 4vw;
+  }
+  .grapdev p {
+    font-size: 4vw;
+  }
+  .footer-txt h6 {
+    font-size: 4vw;
+  }
+  .footer-2 {
+    padding: 3vw;
+  }
+  .footer-2 p {
+    font-size: 2.5vw;
+  }
+}
+
+/* for phones  */
+
+@media (max-width: 600px) {
   .slider-txt h1 {
     font-size: 8vw;
   }
@@ -1098,10 +1189,6 @@ footer {
   }
   .dash-head > p {
     font-size: 4vw;
-  }
-  .dash-img img {
-    width: 300px;
-    height: 300px;
   }
 
   /* query section  */
