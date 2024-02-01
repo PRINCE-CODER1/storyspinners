@@ -1035,6 +1035,9 @@ footer {
   .acc-cnt.accord {
     height: 100%;
   }
+  .ques-1 {
+    padding: 5vw;
+  }
 }
 
 /* For tablets laptops */
