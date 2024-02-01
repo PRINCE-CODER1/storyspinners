@@ -70,3 +70,16 @@ gsap.to(".pursuit-sec", {
     scrub: 2,
   },
 });
+
+const accord = document.querySelectorAll(".accordian");
+const accitems = document.querySelectorAll(".acc-cnt");
+accord.forEach((acc, index) => {
+  acc.addEventListener("click", function () {
+    accitems.forEach((item) => {
+      if (item !== accitems[index]) {
+        item.classList.remove("accord");
+      }
+    });
+    accitems[index].classList.toggle("accord");
+  });
+});
