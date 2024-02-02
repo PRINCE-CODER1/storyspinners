@@ -167,7 +167,7 @@ body {
 
 /* menu bars logic */
 .menu-bar {
-  position: fixed;
+  position: absolute;
   display: none;
   margin: 0 1vw;
   top: 50px;
