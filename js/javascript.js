@@ -84,13 +84,62 @@ accord.forEach((acc, index) => {
   });
 });
 
-function onClick(e) {
-  e.preventDefault();
-  grecaptcha.ready(function () {
-    grecaptcha
-      .execute("reCAPTCHA_site_key", { action: "submit" })
-      .then(function (token) {
-        // Add your logic to submit to your backend server here.
-      });
+document.getElementById("myForm").addEventListener("submit", function (event) {
+  // Prevent the form from submitting
+  event.preventDefault();
+
+  // Clear previous error messages
+  clearErrors();
+
+  // Perform validation
+  if (validateForm()) {
+    alert("Form submitted successfully!");
+  }
+});
+
+function validateForm() {
+  let isValid = true;
+
+  // Name validation
+  const nameInput = document.getElementById("name");
+  const nameError = document.getElementById("nameError");
+  if (nameInput.value.trim() === "") {
+    nameError.textContent = "Name is required";
+    isValid = false;
+  }
+
+  // Email validation
+  const emailInput = document.getElementById("email");
+  const emailError = document.getElementById("emailError");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailInput.value.trim())) {
+    emailError.textContent = "Invalid email address";
+    isValid = false;
+  }
+
+  // contact validation
+  const contactInput = document.getElementById("text");
+  const contactError = document.getElementById("contactError");
+  if (contactInput.value.trim() === "") {
+    contactError.textContent = "Contact is required";
+    isValid = false;
+  }
+
+  // textarea validation
+  const textareaInput = document.getElementById("textarea");
+  const textareaError = document.getElementById("textareaError");
+  if (textareaInput.value.trim() === "") {
+    textareaError.textContent = "Contact is required";
+    isValid = false;
+  }
+
+  return isValid;
+}
+
+// clear errors
+function clearErrors() {
+  const errorElements = document.querySelectorAll(".error");
+  errorElements.forEach(function (element) {
+    element.textContent = "";
   });
 }

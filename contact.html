@@ -97,34 +97,76 @@
                 <div class="col-sm-12 col-md-6">
                     <div class="form-area">
                         <h2>Contact Us</h2>
-                        <form action="">
+                        <form id="myForm">
+                          <div class="input-box">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name">
+                            <span id="nameError" class="error"></span>
+
+                          </div>
+                  
+                          <div class="input-box">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                            <span id="emailError" class="error"></span>
+                          </div>
+                          
+                
+                          <div class="input-box">
+                            <label for="text">Contact Number</label>
+                            <input type="text" id="text" name="text">
+                            <span id="contactError" class="error"></span>
+
+                          </div>
+                          <div class="input-box">
+                            <label for="password">Subject</label>
+                            <input type="text">
+                          </div>
+                          <div class="input-box">
+                            <label for="password">Your Message/Query </label>
+                            <textarea type="text" id="textarea" name="textarea"></textarea>
+                            <span id="textareaError" class="error"></span>
+
+                          </div>
+                  
+                          <div class="input-box">
+                            <button type="submit" value="Submit">Submit</button>
+
+                          </div>
+                      </form>
+                        <!-- <form class="form" action="">
                             <div class="input-box">
-                                <h6>Full Name *</h6>
-                                <input type="text" required="required">
+                                <h6>Full Name <span>*</span></h6>
+                                <input type="text" class="fullname-cnt">
+                                <div id="nameerror" class="error"></div>
                             </div>
                             <div class="input-box">
-                                <h6>Full Name *</h6>
-                                <input type="text" required="required">
+                                <h6>Email <span>*</span></h6>
+                                <input type="email" id="email" name="email">
+                                <div id="emailError" class="error"></div>
                             </div>
                             <div class="input-box">
-                                <h6>Contact Number *</h6>
-                                <input type="text" required="required">
+                                <h6>Contact Number <span>*</span></h6>
+                                
+                                <input type="text" class="phone-cnt" placeholder="087993-31978">
+                                <div id="phoneerror" class="error"></div>
                             </div>
                             <div class="input-box">
                                 <h6>Subject</h6>
-                                <input type="text" required="required">
+                                <input type="text" >
                             </div>
-                            <button class="g-recaptcha" 
-                                    data-sitekey="reCAPTCHA_site_key" 
-                                    data-callback='onSubmit' 
-                                    data-action='submit'>
-                                    Submit
-                            </button>
                             <div class="input-box">
-                                <h6>Your Message/Query *</h6>
-                                <textarea name="" id="" cols="50" rows="8" required="required"></textarea>
+                                <h6>Your Message/Query <span>*</span></h6>
+                                <textarea name="" class="textarea-cnt" id="" cols="50" rows="5"></textarea>
+                                <div id="messerror" class="error"></div>
                             </div>
-                        </form>
+                            <div class="input-box">
+                              <button type="submit">
+                                Submit
+                              </button>
+
+                            </div>
+                        </form> -->
                     </div>
                 </div>
             </div>
@@ -184,8 +226,6 @@
       <p class="mb-0">Developed & Maintained by <a href="">Grapdevs.com</a></p>
     </div>
 
-    <!-- recaptcha -->
-    <script src="https://www.google.com/recaptcha/api.js?render=reCAPTCHA_site_key"></script>
     <!-- gsap  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <!-- gsap scroll trigger -->

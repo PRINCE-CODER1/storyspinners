@@ -990,6 +990,10 @@ footer {
 
 /* contact section here */
 
+::selection {
+  background-color: #000000;
+  color: #fff;
+}
 .contact {
   padding: 4vw 10vw;
 }
@@ -1020,11 +1024,43 @@ footer {
   height: 100%;
   padding: 0 3vw;
 }
-.form-area form {
-  /* padding: 2vw; */
-}
+/* .form-area form {
+  padding: 2vw;
+} */
 .form-area h2 {
   font-family: med;
+}
+.input-box {
+  width: 100%;
+  margin: 1vw 0;
+  padding: 0.3vw;
+  font-family: med;
+}
+.input-box input {
+  width: 100%;
+  padding: 0.4vw;
+  outline: none;
+  border: 1px solid #999;
+  border-radius: 5px;
+}
+.input-box textarea {
+  width: 100%;
+  padding: 1vw;
+}
+.input-box button {
+  background: #000000;
+  color: #eec930;
+  padding: 1vw 3vw;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  font-family: med;
+}
+.input-box span {
+  color: red;
+}
+.error {
+  color: red;
 }
 /* ************************************************ */
 /* ************************************************ */
