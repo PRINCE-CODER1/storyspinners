@@ -35,9 +35,9 @@ body {
   position: relative;
 }
 #page-header {
-  position: fixed;
   width: 100%;
   background: #000000;
+  z-index: 999;
 }
 
 .logo {

@@ -70,7 +70,17 @@ gsap.to(".pursuit-sec", {
     scrub: 2,
   },
 });
-
+gsap.to("#page-header", {
+  y: 1,
+  position: "fixed",
+  scrollTrigger: {
+    start: `100% top`,
+    end: `30% bottom`,
+    trigger: "#page-header",
+    pin: true,
+    scrub: 1,
+  },
+});
 const accord = document.querySelectorAll(".accordian");
 const accitems = document.querySelectorAll(".acc-cnt");
 accord.forEach((acc, index) => {
