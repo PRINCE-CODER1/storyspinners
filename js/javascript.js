@@ -145,7 +145,7 @@ function clearErrors() {
   });
 }
 
-responsive navbars
+// responsive navbars
 const barclick = document.querySelector("menu-bar");
 const resnav = document.querySelector("res-nav");
 
