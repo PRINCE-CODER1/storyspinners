@@ -84,74 +84,74 @@ accord.forEach((acc, index) => {
   });
 });
 
-// const form = document.getElementById("myForm");
-// form.addEventListener("submit", function (event) {
-//   // Prevent the form from submitting
-//   event.preventDefault();
+const form = document.getElementById("myForm");
+form.addEventListener("submit", function (event) {
+  // Prevent the form from submitting
+  event.preventDefault();
 
-//   // Clear previous error messages
-//   clearErrors();
+  // Clear previous error messages
+  clearErrors();
 
-//   // Perform validation
-//   if (validateForm()) {
-//     alert("Form submitted successfully!");
-//   }
-// });
+  // Perform validation
+  if (validateForm()) {
+    alert("Form submitted successfully!");
+  }
+});
 
-// function validateForm() {
-//   let isValid = true;
+function validateForm() {
+  let isValid = true;
 
-//   // Name validation
-//   const nameInput = document.getElementById("name");
-//   const nameError = document.getElementById("nameError");
-//   if (nameInput.value.trim() === "") {
-//     nameError.textContent = "Name is required";
-//     isValid = false;
-//   }
+  // Name validation
+  const nameInput = document.getElementById("name");
+  const nameError = document.getElementById("nameError");
+  if (nameInput.value.trim() === "") {
+    nameError.textContent = "Name is required";
+    isValid = false;
+  }
 
-//   // Email validation
-//   const emailInput = document.getElementById("email");
-//   const emailError = document.getElementById("emailError");
-//   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-//   if (!emailRegex.test(emailInput.value.trim())) {
-//     emailError.textContent = "Invalid email address";
-//     isValid = false;
-//   }
+  // Email validation
+  const emailInput = document.getElementById("email");
+  const emailError = document.getElementById("emailError");
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(emailInput.value.trim())) {
+    emailError.textContent = "Invalid email address";
+    isValid = false;
+  }
 
-//   // contact validation
-//   const contactInput = document.getElementById("text");
-//   const contactError = document.getElementById("contactError");
-//   if (contactInput.value.trim() === "") {
-//     contactError.textContent = "Contact is required";
-//     isValid = false;
-//   }
+  // contact validation
+  const contactInput = document.getElementById("text");
+  const contactError = document.getElementById("contactError");
+  if (contactInput.value.trim() === "") {
+    contactError.textContent = "Contact is required";
+    isValid = false;
+  }
 
-//   // textarea validation
-//   const textareaInput = document.getElementById("textarea");
-//   const textareaError = document.getElementById("textareaError");
-//   if (textareaInput.value.trim() === "") {
-//     textareaError.textContent = "Contact is required";
-//     isValid = false;
-//   }
+  // textarea validation
+  const textareaInput = document.getElementById("textarea");
+  const textareaError = document.getElementById("textareaError");
+  if (textareaInput.value.trim() === "") {
+    textareaError.textContent = "Contact is required";
+    isValid = false;
+  }
 
-//   return isValid;
-// }
+  return isValid;
+}
 
-// // clear errors
-// function clearErrors() {
-//   const errorElements = document.querySelectorAll(".error");
-//   errorElements.forEach(function (element) {
-//     element.textContent = "";
-//   });
-// }
+// clear errors
+function clearErrors() {
+  const errorElements = document.querySelectorAll(".error");
+  errorElements.forEach(function (element) {
+    element.textContent = "";
+  });
+}
 
-// responsive navbars
-// const barclick = document.querySelector("menu-bar");
-// const resnav = document.querySelector("res-nav");
+responsive navbars
+const barclick = document.querySelector("menu-bar");
+const resnav = document.querySelector("res-nav");
 
-// barclick.addEventListener("click", function () {
-//   resnav.classList.add("navoc");
-// });
+barclick.addEventListener("click", function () {
+  resnav.classList.add("navoc");
+});
 // menu bar logic
 function menuclick() {
   const resnav = document.querySelector(".res-nav");
