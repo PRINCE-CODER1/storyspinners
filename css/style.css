@@ -1240,6 +1240,7 @@ footer {
     top: 35px;
     color: #fff;
     font-size: 4vw;
+    margin: 0;
   }
 
   /* responsive navbar  */
@@ -1366,9 +1367,9 @@ footer {
 @media (max-width: 600px) {
   /* menu bars logic */
   .menu-bar {
-    top: 35px;
+    top: 38px;
     color: #fff;
-    font-size: 6vw;
+    font-size: 6.6vw;
   }
   /* responsive navbar  */
   .res-nav {
