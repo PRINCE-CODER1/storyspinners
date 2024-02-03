@@ -35,12 +35,11 @@ body {
   position: relative;
 }
 #page-header {
-  width: 100%;
-}
-#page-header2 {
+  position: fixed;
   width: 100%;
   background: #000000;
 }
+
 .logo {
   position: relative;
   display: flex;
@@ -184,9 +183,10 @@ body {
   position: fixed;
   z-index: 99;
   width: 25%;
+  top: 18.3%;
   height: 100%;
-  left: 0%;
   left: -100%;
+  overflow-y: auto;
   background: rgba(10, 32, 68, 0.3);
   box-shadow: 0 0 10px rgba(10, 32, 68, 0.3);
   backdrop-filter: blur(20px);
