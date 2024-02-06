@@ -1463,7 +1463,7 @@ footer {
     padding: 20vw 0;
   }
   .choose-cnt {
-    height: 250px;
+    height: 100%;
   }
   .choose-sec > h1 {
     font-size: 8vw;
@@ -1476,6 +1476,18 @@ footer {
   }
   .choose-cnt h5 {
     font-size: 7vw;
+  }
+  .about-img {
+    width: 250px;
+    height: 250px;
+  }
+  .about-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .sm-txt {
+    font-size: 4vw;
   }
 
   /* package section  */
@@ -1492,6 +1504,13 @@ footer {
   .package-cnt a {
     padding: 3vw 8vw;
     font-size: 2.3vw;
+  }
+  .pur-top {
+    top: 0;
+    margin: 4vw 0;
+  }
+  .pr-sec p {
+    font-size: 3vw;
   }
 
   /* published section  */
