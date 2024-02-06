@@ -42,8 +42,15 @@ swiper.on("slideChange", function () {
 });
 function showAnswer(answerText) {
   var answerContainer = document.querySelector(".answers");
-  answerContainer.innerHTML = "<p>" + answerText + "</p>";
-  answerContainer.classList.add("show");
+  var accordcolor = document.querySelectorAll(".accordian");
+  accordcolor.forEach((ac) => {
+    ac.addEventListener("click", function () {
+      ac.classList.add("accans");
+    });
+    ac.classList.remove("accans");
+    answerContainer.innerHTML = "<p>" + answerText + "</p>";
+    answerContainer.classList.add("show");
+  });
 }
 gsap.set(".choose-sec", {
   x: -50,
@@ -71,7 +78,6 @@ gsap.to(".pursuit-sec", {
   },
 });
 gsap.to("#page-header", {
-  y: 1,
   position: "fixed",
   scrollTrigger: {
     start: `100% top`,

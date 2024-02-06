@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.1.0/remixicon.css"
+    />
+    <link rel="icon" href="images/logo.png" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>publish</title>
+  </head>
+  <body>
+    <div class="main">
+      <!-- header section  -->
+      <header id="page-header">
+        <div class="container">
+          <div class="row d-flex justify-content-center align-items-center p-3">
+            <div
+              class="col-md-3 d-flex justify-content-center align-items-center p-0"
+            >
+              <div class="logo">
+                <img src="images/sclogo.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="col-md-9 d-flex align-items-center justify-content-end p-0"
+            >
+              <div class="nav-part">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="packages.html">Packages</a></li>
+                  <li><a href="published.html">Published</a></li>
+                  <li><a href="tmcq.html">TMCQ</a></li>
+                  <li><a href="market.html">Market Analysis</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <!-- <li>
+                    <a href="#">
+                      Why true Dreamster
+                      <i class="ri-arrow-drop-down-line"></i>
+                    </a>
+                    <ul class="sub-men">
+                      <li><a href="#">About us</a></li>
+                      <li><a href="#">Event</a></li>
+                      <li><a href="#">Contact Us</a></li>
+                    </ul>
+                  </li> -->
+                  <!-- <li>
+                    <a href="#">
+                      Our ventures
+                      <i class="ri-arrow-drop-down-line"></i>
+                    </a>
+                    <ul class="sub-men-2">
+                      <li id="true-hover">
+                        <a href="#">True Awards</a>
+                        <ul class="sub-men-3">
+                          <li><a href="#">Vote Now</a></li>
+                          <li><a href="#">Apply For True Awards - 2023</a></li>
+                        </ul>
+                      </li>
+                      <li><a href="#">World Record Anthology</a></li>
+                      <li><a href="#">You're Next</a></li>
+                    </ul>
+                  </li>
+                  <li><a href="#">true books</a></li>
+                  <li><a href="#">blog</a></li>
+                  <li><a href="#">dashboard</a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="menu-bar" onclick="menuclick()">
+              <i class="ri-menu-2-line"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-- responsive navabar -->
+      <div class="res-nav">
+        <ul class="res-ul">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="packages.html">Packages</a></li>
+          <li><a href="published.html">Published</a></li>
+          <li><a href="tmcq.html">TMCQ</a></li>
+          <li><a href="market.html">Market Analysis</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- packages section here -->
+      <div class="package">
+        <div class="container py-5">
+          <div class="row">
+            <div
+              class="col-md-5 d-flex justify-content-center align-items-center"
+            >
+              <div class="package-cnt text-center">
+                <h1>PUBLISHED</h1>
+              </div>
+            </div>
+            <div
+              class="col-md-7 d-flex justify-content-center align-items-center"
+            >
+              <div class="package-img">
+                <img src="images/packages.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Glorious section here  -->
+      <div class="dashboard">
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <h1 class="text-center" style="font-family: pop">Testimonials</h1>
+          <div class="carousel-inner car-cus">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <div class="testi-cnt">
+                <h3>
+                  Truly speaking... this is my 5th book being an author... from
+                  my heart... the most friendly and hussle free publication this
+                  was... the one which i felt very elated and light... from
+                  communication to the proof check... nothing made me feel
+                  authoritative or under pressure... thank u so much for being
+                  such a sweet and lovely house♥️❄️
+                </h3>
+                <div class="stars-show">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <div class="testi-cnt">
+                <h3>
+                  Our experience with Story Spinners Publication has been
+                  delightful! We never imagined writing a book together and
+                  getting it published so smoothly. We got the best service
+                  under our budget. We recommend you to get your book published
+                  by Story Spinners Publication.
+                </h3>
+                <div class="stars-show">
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                  <i class="ri-star-fill"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <!-- published section here  -->
+      <div class="dashboard">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 text-center dash-head py-3">
+              <h1>Publishing</h1>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6">
+              <div class="simple-txt">
+                <hr style="width: 100px" />
+              </div>
+              <div class="dash-points">
+                <ul class="dash-1">
+                  <li>
+                    <h5>
+                      <i class="ri-record-circle-line"></i>Reader feedback
+                    </h5>
+                    <p>
+                      We provide with readers feedback by promoting your book
+                      within your budget and also get an increased number of
+                      sales as your book reaches wider audience.
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      <i class="ri-record-circle-line"></i>Engaging book
+                      description
+                    </h5>
+                    <p>
+                      About the book section plays a significant role when
+                      someone purchases your book . An interesting engaging book
+                      description is provided by us for the same.
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      <i class="ri-record-circle-line"></i>Professional Editing
+                    </h5>
+                    <p>
+                      Here at Story Spinners Publication, we've got the ultimate
+                      dream team, specially trained to take your rough drafts
+                      and polish them to perfection!
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      <i class="ri-record-circle-line"></i>Wide Distribution
+                    </h5>
+                    <p>
+                      We're your trusty sidekicks, getting your book into the
+                      hands of even more readers by cracking open the market
+                      codes and coming up with a killer distribution plan.
+                    </p>
+                  </li>
+                  <li>
+                    <h5>
+                      <i class="ri-record-circle-line"></i>Perfect journey with
+                      us
+                    </h5>
+                    <p>
+                      Transforming from a scribbler to a literary superstar with
+                      Story Spinners Publication is a thrilling adventure. Our
+                      A-team of book wizards will whisk you away to the land of
+                      publishing, where your dreams will become a reality. With
+                      our top-notch service and expert guidance, you 'll be
+                      unstoppable!
+                    </p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="dash-img">
+                <img src="images/lib2.jpg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- query section here  -->
+      <div class="query">
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-md-12 d-flex gap-5 justify-content-center align-items-center"
+            >
+              <div class="reg-txt"><h1>Publish your Book now</h1></div>
+              <div class="reg-btn"><a href="#">Click Here</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- footer section here  -->
+    <footer>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="grapdev">
+              <p>
+                Thankyou for your time , your trust and your belief in our
+                vision. Contact us today for publishing your dream book! We are
+                here to listen, learn, and grow together.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-txt">
+              <h6>REGISTRATIONS</h6>
+              <ul>
+                <li><a href="">Publishing</a></li>
+                <li><a href="">You’re Next</a></li>
+                <li><a href="">Open Mic</a></li>
+                <li><a href="">The Motive Journal</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="footer-txt">
+              <h6>Contact Us</h6>
+              <ul>
+                <li><a href="#community">FAQs</a></li>
+                <li><a href="tel: 85039 81979">+91 85039 81979</a></li>
+                <li>
+                  <a href="mailto:"
+                    >storyspinnerspublication<br />@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a href=""
+                    ><i class="ri-map-pin-2-fill"></i>Rajasthan (Remote work)</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- <div class="col-md-3">
+              <div class="footer-txt">
+                <h6>SOCIAL NETWOK</h6>
+                <ul>
+                  <li><a href="">Instagram</a></li>
+                  <li><a href="">Facebook</a></li>
+                  <li><a href="">Portfolio</a></li>
+                  <li><a href="">Youtube</a></li>
+                </ul>
+              </div>
+            </div> -->
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="footer-2 text-center">
+      <p class="mb-0">Developed & Maintained by <a href="">Grapdevs.com</a></p>
+    </div> -->
+
+    <!-- gsap  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <!-- gsap scroll trigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- javascript file -->
+
+    <script src="js/javascript.js" defer></script>
+  </body>
+</html>
